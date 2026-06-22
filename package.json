@@ -33,6 +33,7 @@
     "search"
   ],
   "main": "./out/extension.js",
+  "activationEvents": [],
   "icon": "assets/logo.png",
   "contributes": {
     "mcpServerDefinitionProviders": [
