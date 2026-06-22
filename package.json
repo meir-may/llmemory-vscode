@@ -1,0 +1,55 @@
+{
+  "name": "llmemory",
+  "displayName": "LLMemory",
+  "description": "Search your AI chat history (ChatGPT, Claude, Codex) from VS Code agent mode. Remote MCP server, OAuth 2.1, zero server-side storage.",
+  "version": "0.1.0",
+  "publisher": "llmemory",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meir-may/llmemory-vscode"
+  },
+  "homepage": "https://llmemory.xyz",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "categories": [
+    "AI",
+    "Machine Learning",
+    "Other"
+  ],
+  "keywords": [
+    "llmemory",
+    "memory",
+    "context",
+    "chat-history",
+    "chatgpt",
+    "claude",
+    "codex",
+    "claude-code",
+    "vault",
+    "mcp",
+    "handoff",
+    "search"
+  ],
+  "main": "./out/extension.js",
+  "icon": "assets/logo.png",
+  "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "llmemory",
+        "label": "LLMemory"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/vscode": "^1.101.0",
+    "typescript": "^5.9.2"
+  }
+}
