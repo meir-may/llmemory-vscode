@@ -8,10 +8,17 @@ Developers working across multiple AI tools (Claude Code, ChatGPT, Codex) consta
 
 ## Install
 
-1. Install this extension from the VS Code Marketplace.
-2. Open agent mode in Chat view (`Cmd+I` / `Ctrl+I`).
-3. LLMemory appears in the **MCP SERVERS** section of the Extensions view — enabled by default.
-4. On first tool call, a browser OAuth flow grants Google Drive access (`drive.file` scope, limited to the `LLMemory/` folder).
+Not yet on the Microsoft VS Code Marketplace — install it one of these ways:
+
+- **VS Code:** download `llmemory-0.1.0.vsix` from the [latest release](https://github.com/meir-may/llmemory-vscode/releases/latest), then Extensions view → **⋯** → **Install from VSIX…**
+- **VSCodium / editors that use Open VSX:** install [LLMemory from Open VSX](https://open-vsx.org/extension/llmemory/llmemory)
+- **Cursor:** use the [LLMemory Cursor plugin](https://github.com/meir-may/llmemory-cursor-plugin) instead
+
+Then:
+
+1. Open agent mode in Chat view (`Cmd+I` / `Ctrl+I`).
+2. LLMemory appears in the **MCP SERVERS** section of the Extensions view — enabled by default.
+3. On first tool call, a browser OAuth flow grants Google Drive access (`drive.file` scope, limited to the `LLMemory/` folder).
 
 No configuration needed. The extension registers the remote MCP server automatically.
 
